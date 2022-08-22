@@ -4,5 +4,5 @@ export default function Home(){
             <h1>My Progression</h1>
             <div>Welcome to this site devoted to your programming progression</div>
         </div>        
-    )
+    );
 }

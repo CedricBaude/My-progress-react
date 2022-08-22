@@ -1,7 +1,8 @@
+import './css/app.css';
 import Home from './pages/Home';
 import Menu from './components/Menu';
 import TechnoAdd from './pages/TechnoAdd';
-import './css/app.css';
+import TechnoList from './pages/TechnoList';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Menu />
       <Home />
       <TechnoAdd />
+      <TechnoList />
     </>
   );
 }
