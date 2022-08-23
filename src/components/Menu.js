@@ -1,10 +1,12 @@
+import { NavLink } from 'react-router-dom';
+
 export default function Menu() {
     return (
         <div className="menu">
             <ul>
-                <li>Home</li>
-                <li>Add Techno</li>
-                <li>All Techno</li>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/add">Add Techno</NavLink></li>
+                <li><NavLink to="/list">All Techno</NavLink></li>
             </ul>
         </div>
     );
