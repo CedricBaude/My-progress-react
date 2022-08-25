@@ -25,7 +25,6 @@ export default function TechnoAdd(props) {
                 <form onSubmit={(evt) => handleSubmit(evt)}>
                     <label htmlFor="technoname">Name</label>
                     <br />
-                    <input type="text" name="technoname" id="technoname" value={techno.technomane} onChange={(evt) => handleChange(evt)} />
                     <input type="text" name="technoname" id="technoname" value={techno.technoname} onChange={(evt) => handleChange(evt)} />
                     <br />
                     <label htmlFor="technocategory">Category:</label>
