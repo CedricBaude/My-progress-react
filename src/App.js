@@ -5,12 +5,13 @@ import TechnoAdd from './pages/TechnoAdd';
 import TechnoList from './pages/TechnoList';
 import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
   const [technos, setTechnos] = useState([]);
 
   function handleAddTechno(techno) {
-    setTechnos([...technos, techno]);
+    setTechnos([...technos, { ...techno, technoid: uuidv4() }]);
   }
   return (
     <>
