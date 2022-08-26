@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 export default function TechnoAdd(props) {
     const [techno, setTechno] = useState({
-        technomane: '',
+        technoname: '',
         technocategory: '',
         technodescription: ''
     });
@@ -12,6 +12,11 @@ export default function TechnoAdd(props) {
     function handleSubmit(evt) {
         evt.preventDefault();
         handleAddTechno(techno);
+        setTechno({
+            technoname: '',
+            technocategory: '',
+            technodescription: ''
+        });
     }
 
     function handleChange(evt) {
@@ -39,7 +44,7 @@ export default function TechnoAdd(props) {
                     <br />
                     <label htmlFor="technodescription">Description:</label>
                     <br />
-                    <textarea name="technodescription" id="technodescription" cols="30" rows="10" ></textarea>
+                    <textarea name="technodescription" id="technodescription" cols="30" rows="10" value={techno.technodescription} onChange={(evt) => handleChange(evt)}></textarea>
                     <br />
                     <input type="submit" value="Add Techno" className="btn" />
                 </form>
