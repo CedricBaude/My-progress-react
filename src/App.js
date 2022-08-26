@@ -10,7 +10,7 @@ import { useLocalStorage } from './hooks/useLocalStorage';
 
 function App() {
   const [technos, setTechnos] = useState([]);
-  const STORAGE_KEY = 'technos';
+  const STORAGE_KEY = "technos";
   const [storedTechnos, setStoredTechnos] = useLocalStorage(STORAGE_KEY, []);
 
   useEffect(() => {
