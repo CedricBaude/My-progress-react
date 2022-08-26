@@ -17,9 +17,9 @@ function App() {
       <Menu />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/add" element={<TechnoAdd handleAddTechno={handleAddTechno} hello = 'world' />} />
-        <Route path="/list" element={<TechnoList />} />
-      </Routes>    
+        <Route path="/add" element={<TechnoAdd handleAddTechno={handleAddTechno} hello='world' />} />
+        <Route path="/list" element={<TechnoList technos={technos} />} />
+      </Routes>
 
     </>
   );
