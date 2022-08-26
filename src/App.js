@@ -6,7 +6,7 @@ import TechnoList from './pages/TechnoList';
 import { Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import { useLocalStorage } from './hooks/useLocalStorage';
+import { useLocalStorage } from "./hooks/useLocalStorage";
 
 function App() {
   const [technos, setTechnos] = useState([]);
